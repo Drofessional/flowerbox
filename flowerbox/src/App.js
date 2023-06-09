@@ -10,24 +10,18 @@ import data from "./ImageData";
 export default function App() {
   return (
     <div className="App">
-      {/* <header className="header">
-        <Navbar />
-      </header>
-      <div className="big-image">
-        <BigPicture />
-      </div> */}
       <Navbar />
       <BigPicture />
+      <div className="card-container">
+
       <div className="grid-images">
         {data.map((image, index) => (
           <SmallPicture key={index} imageData={image} />
         ))}
       </div>
+      </div>
       <Footer />
-      
-      {/* <footer className="footer">
-        <Footer />
-      </footer> */}
+
     </div>
   );
 }
